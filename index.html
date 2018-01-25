@@ -1,0 +1,412 @@
+<!-- 
+    IBM In-house {Web Coder} course Assignment Snippet.
+    HTML master file.
+    For internal IBM learning usage.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Page tag title -->
+    <title>PokémonGo Legendary Raid Boss Gathering Meet Up</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    
+    <!-- FontAwesome; code after any Themes and Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!-- Customise CSS; code as the last item -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- OUTLINER for development purposes Only - To be commented out for Production releases -->
+        <style type="text/css">
+            body{border: 2px solid blue;}
+            .container{border: 2px solid green;}
+            .jumbotron{border: 3px solid purple;}
+            .row{border: 2px dotted red;}
+            .row[class*='col-']{border: 3px solid purple;}
+            .show{border: 3px solid purple;}
+        </style>
+
+    <!-- Script for slidershow -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+
+    <!-- SmartMenus core CSS (required) -->
+    <link href="sm-core-css.css" rel="stylesheet" type="text/css" />
+
+    <!-- "sm-clean" menu theme (optional, you can use your own CSS, too) -->
+    <link href="sm-clean.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- Top Navigation bar -->
+    <nav class="navbar fixed-top navbar-light bg-light" id="main-nav">
+        <a class="navbar-brand" href="https://www.ibm.com/ibm/sg/en/" target="_blank">
+            <img src="image/ibm_stripblack.png" alt="">
+        </a>
+        <ul id="main-menu" class="sm sm-clean">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">MENU</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#Teams">Teams</a></li>
+              <li><a class="dropdown-item" href="#Travel">PokémonGo Travel Video</a></li>
+              <li><a class="dropdown-item" href="#RaidRequest">Raid Request Gathering Form</a></li>
+              <li><a class="dropdown-item" href="#RaidCalender">Raid Gathering Calender</a></li>
+              <li><a class="dropdown-item" href="#TwitterFeed">Latest Twitter Feed</a></li>
+              <li><a class="dropdown-item" href="#PokeMonCenterMap">Purchase your PokémonGo Location</a></li>
+              <li><a class="dropdown-item" href="#PokeMonGoServerStatus">PokémonGo Server Status</a></li>
+              <li><a class="dropdown-item" href="#SocialMediaHandles">PokémonGo Social Media Handles</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTAINER - code entire page contents within this div class="container"-->
+    <div class="container-fluid">
+        <!-- ROW1: Jumbotron -->
+        <div class="row">
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                <!-- Jumbotron example -->
+                
+                    <!-- <div class="container">
+                        <h1 class="display-4">Hello, world! Fluid jumbotron</h1>
+                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    </div> -->
+                    <!-- Start Slider section -->
+                    <div id="wowslider-container1">
+                        <div class="ws_images"><ul>
+                            <li><img src="image/pokmongo_2018.jpg" alt="PokémonGo 2018" title="PokémonGo 2018" id="wows1_0"/></li>
+                            <li><img src="image/call_of_legends_kyogre_pokmon.jpg" alt="Call of Legends Kyogre (Pokémon)" title="Call of Legends Kyogre (Pokémon)" id="wows1_1"/></li>
+                            <li><img src="image/charizard_pokmon.jpg" alt="Charizard (Pokémon)" title="Charizard (Pokémon)" id="wows1_2"/></li>
+                            <li><img src="image/call_of_legends_deoxys_pokmon.jpg" alt="Call of Legends Deoxys (Pokémon)" title="Call of Legends Deoxys (Pokémon)" id="wows1_3"/></li>
+                            <li><img src="image/gengar_pokmon.jpg" alt="Gengar (Pokémon)" title="Gengar (Pokémon)" id="wows1_4"/></li>
+                            <li><img src="image/call_of_legends_groudon_pokmon.jpg" alt="Call of Legends Groudon (Pokémon)" title="Call of Legends Groudon (Pokémon)" id="wows1_5"/></li>
+                            <li><img src="image/call_of_legends_lugia_pokmon.jpg" alt="Call of Legends Lugia (Pokémon)" title="Call of Legends Lugia (Pokémon)" id="wows1_6"/></li>
+                            <li><img src="image/entei_pokmon.jpg" alt="Entei (Pokémon)" title="Entei (Pokémon)" id="wows1_7"/></li>
+                            <li><img src="image/heracross_pokmon.jpg" alt="Heracross (Pokémon)" title="Heracross (Pokémon)" id="wows1_8"/></li>
+                            <li><img src="image/hooh_pokmon.jpg" alt="Ho-Oh (Pokémon)" title="Ho-Oh (Pokémon)" id="wows1_9"/></li>
+                            <li><img src="image/hooh_v.s._lugia_pokmon.jpg" alt="Ho-Oh v.s. Lugia (Pokémon)" title="Ho-Oh v.s. Lugia (Pokémon)" id="wows1_10"/></li>
+                            <li><img src="image/mewtwo_raid_legendarypokmon.jpg" alt="Mewtwo Raid Legendary(Pokémon)" title="Mewtwo Raid Legendary(Pokémon)" id="wows1_11"/></li>
+                            <li><img src="image/reshiram_and_zekrom_pokmon.jpg" alt="Reshiram and Zekrom (Pokémon)" title="Reshiram and Zekrom (Pokémon)" id="wows1_12"/></li>
+                            <li><img src="image/suicune_pokmon.jpg" alt="Suicune (Pokémon)" title="Suicune (Pokémon)" id="wows1_13"/></li>
+                            <li><a href="http://wowslider.net"><img src="image/zoroark_pokmon.jpg" alt="slideshow javascript" title="Zoroark (Pokémon)" id="wows1_14"/></a></li>
+                            <li><img src="image/pokmongo.jpg" alt="PokémonGo" title="PokémonGo" id="wows1_15"/></li>
+                        </ul></div>
+                        <div class="ws_bullets"><div>
+                            <a href="#" title="PokémonGo 2018"><span><img src="image/tooltips/pokmongo_2018.jpg" alt="PokémonGo 2018"/>1</span></a>
+                            <a href="#" title="Call of Legends Kyogre (Pokémon)"><span><img src="image/tooltips/call_of_legends_kyogre_pokmon.jpg" alt="Call of Legends Kyogre (Pokémon)"/>2</span></a>
+                            <a href="#" title="Charizard (Pokémon)"><span><img src="image/tooltips/charizard_pokmon.jpg" alt="Charizard (Pokémon)"/>3</span></a>
+                            <a href="#" title="Call of Legends Deoxys (Pokémon)"><span><img src="image/tooltips/call_of_legends_deoxys_pokmon.jpg" alt="Call of Legends Deoxys (Pokémon)"/>4</span></a>
+                            <a href="#" title="Gengar (Pokémon)"><span><img src="image/tooltips/gengar_pokmon.jpg" alt="Gengar (Pokémon)"/>5</span></a>
+                            <a href="#" title="Call of Legends Groudon (Pokémon)"><span><img src="image/tooltips/call_of_legends_groudon_pokmon.jpg" alt="Call of Legends Groudon (Pokémon)"/>6</span></a>
+                            <a href="#" title="Call of Legends Lugia (Pokémon)"><span><img src="image/tooltips/call_of_legends_lugia_pokmon.jpg" alt="Call of Legends Lugia (Pokémon)"/>7</span></a>
+                            <a href="#" title="Entei (Pokémon)"><span><img src="image/tooltips/entei_pokmon.jpg" alt="Entei (Pokémon)"/>8</span></a>
+                            <a href="#" title="Heracross (Pokémon)"><span><img src="image/tooltips/heracross_pokmon.jpg" alt="Heracross (Pokémon)"/>9</span></a>
+                            <a href="#" title="Ho-Oh (Pokémon)"><span><img src="image/tooltips/hooh_pokmon.jpg" alt="Ho-Oh (Pokémon)"/>10</span></a>
+                            <a href="#" title="Ho-Oh v.s. Lugia (Pokémon)"><span><img src="image/tooltips/hooh_v.s._lugia_pokmon.jpg" alt="Ho-Oh v.s. Lugia (Pokémon)"/>11</span></a>
+                            <a href="#" title="Mewtwo Raid Legendary(Pokémon)"><span><img src="image/tooltips/mewtwo_raid_legendarypokmon.jpg" alt="Mewtwo Raid Legendary(Pokémon)"/>12</span></a>
+                            <a href="#" title="Reshiram and Zekrom (Pokémon)"><span><img src="image/tooltips/reshiram_and_zekrom_pokmon.jpg" alt="Reshiram and Zekrom (Pokémon)"/>13</span></a>
+                            <a href="#" title="Suicune (Pokémon)"><span><img src="image/tooltips/suicune_pokmon.jpg" alt="Suicune (Pokémon)"/>14</span></a>
+                            <a href="#" title="Zoroark (Pokémon)"><span><img src="image/tooltips/zoroark_pokmon.jpg" alt="Zoroark (Pokémon)"/>15</span></a>
+                            <a href="#" title="PokémonGo"><span><img src="image/tooltips/pokmongo.jpg" alt="PokémonGo"/>16</span></a>
+                        </div></div>
+                        <div class="ws_shadow"></div>
+                        </div>	
+                        <script type="text/javascript" src="javascript/wowslider.js"></script>
+                        <script type="text/javascript" src="javascript/script.js"></script>
+                        <!-- End Slider section -->
+                
+            </div>
+        </div>
+        <!-- end of ROW1: Jumbotron -->
+
+        <!-- Hyperlink to link navigation to teams -->
+        <a name="Teams"></a>
+
+        <!-- ROW2: Image-Thumbnails -->
+        <div class="row parallax" align="center">
+            <!-- Row2 Col1of3 -->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4 show">
+            
+            <div class="flip-container img-thumbnail" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front img-thumbnail">
+                        <img src="image/team_yellow.png" class="img-fluid rounded" alt=""></img>
+                    </div>
+                    <div class="back img-thumbnail">
+                        <img src="image/team_yellow_back.jpg" class="img-fluid rounded" alt=""></img>
+                    </div>
+                </div>
+            </div><br>
+
+                <!-- <div class="flip_container">
+                    <div class="flip">
+                        <div class="flip_front">
+                            <img src="image/team_yellow.png" alt=""></img>         
+                        </div>
+                        <div class="flip_back">
+                            <img src="image/team_yellow_back.jpg" alt=""></img>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Image Thumbnail
+                <div class="img-thumbnail">
+                    <img src="image/team_yellow.png" class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h3>title</h3>
+                        <p>quick brown fox jumps over the lazy dog.</p>
+                        <a href="#" class="btn btn-primary btn-sm">click</a>
+                    </div>
+                </div><br> -->
+            </div>
+            <!-- end of ROW2 Col1of3 -->
+
+            <!-- ROW2 Col2of3 -->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4 show">
+                <div class="flip-container img-thumbnail" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front img-thumbnail">
+                            <img src="image/team_blue.png" class="img-fluid rounded" alt=""></img>
+                        </div>
+                        <div class="back img-thumbnail">
+                            <img src="image/team_blue_back.jpg" class="img-fluid rounded" alt=""></img>
+                        </div>
+                    </div>
+                </div><br>
+                
+   
+
+                <!-- Image Thumbnail -->
+                <!-- <div class="img-thumbnail">
+                    <img src="image/team_blue.png" class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h3>title</h3>
+                        <p>quick brown fox jumps over the lazy dog.</p>
+                        <a href="#" class="btn btn-primary btn-sm">click</a>
+                    </div>
+                </div><br> -->
+            </div>
+            <!-- end of ROW2 Col2of3 -->
+
+            <!-- ROW2 Col3of3 -->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4 show">
+                <div class="flip-container img-thumbnail" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front img-thumbnail">
+                            <img src="image/team_red.png" class="img-fluid rounded" alt=""></img>
+                        </div>
+                        <div class="back img-thumbnail">
+                            <img src="image/team_red_back.jpg" class="img-fluid rounded" alt=""></img>
+                        </div>
+                    </div>
+                </div><br>
+                <!-- Image Thumbnail
+                <div class="img-thumbnail">
+                    <img src="image/team_red.png" class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h3>title</h3>
+                        <p>quick brown fox jumps over the lazy dog.</p>
+                        <a href="#" class="btn btn-primary btn-sm">click</a>
+                    </div>
+                </div><br> -->
+            </div>
+            <!-- end of ROW2 Col3of3 -->
+        </div>
+        <!-- end of Row2: Image-Thumbnails -->
+
+        <!-- Hyperlink to link navigation to Travel -->
+        <a name="Travel"></a>
+        
+        <!-- ROW3: Video -->
+        <div class="row">
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                <!-- Embed Video -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- <iframe class="embed-responsive-item" src="https://youtu.be/s-ZvTpIQ4JY" allowfullscreen></iframe> -->
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/s-ZvTpIQ4JY?autoplay=1&loop=1&playlist=s-ZvTpIQ4JY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <!-- End of Embed Video -->
+            </div>
+        </div><br>
+        <!-- end of ROW3: Video -->
+
+        <!-- Hyperlink to link navigation to RaidRequest -->
+        <a name="RaidRequest"></a>
+
+        <!-- ROW4: Form & Text -->
+        <div class="row">
+            <!-- Row4 Col1of2: Form -->
+            <div class="col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6 show">
+                <!-- Form -->
+                <div class="embed-responsive embed-responsive-4by3">
+                        <!-- Form Registration -->
+                        <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSfj5ybef5W6_Wa55IeFGCnvQqplWvHN6ynvYbBfixomX85WsQ/viewform?embedded=true#start=embed" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        <!-- end of Form Registration -->
+                </div>
+                
+            </div>
+            <!-- end of Row4 Col1of2: Form -->
+
+            <!-- Hyperlink to link navigation to RaidCalender -->
+            <a name="RaidCalender"></a>
+
+            <!-- ROW4 Col2of2: Text -->
+            <div class="col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6
+                        text-center show">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <!-- Calender View -->
+                    <h1>POKEMON GO RAID SCHEDULE</h1>
+                    <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=gmrc.tam%40gmail.com&ctz=Asia%2FSingapore" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    <!-- End of Calender View -->
+                </div>
+            </div>
+            <!-- end of ROW4 Col2of2: Text -->
+        </div><br>
+        <!-- end of ROW4: Form & Text -->
+
+        <!-- Hyperlink to link navigation to TwitterFeed -->
+        <a name="TwitterFeed"></a>
+        
+        <!-- ROW5: Details -->
+        <div class="row">
+            <!-- ROW5 Col1of3: Twitter Feed -->
+            <div class="col-xs-12
+                            col-sm-4
+                            col-md-4
+                            col-lg-4 show">
+                <!-- Embed Twitter Feed -->
+                    <!-- <blockquote class="twitter-tweet tw-align-center" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">New year, new loading screens! Refresh your phone&#39;s home screen by downloading the new loading screen in high resolution. <a href="https://t.co/Njv873jbJy">https://t.co/Njv873jbJy</a> <a href="https://t.co/ovreNIyqZf">pic.twitter.com/ovreNIyqZf</a></p>&mdash; Pokémon GO (@PokemonGoApp) <a href="https://twitter.com/PokemonGoApp/status/956345524009013251?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote> -->
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New year, new loading screens! Refresh your phone&#39;s home screen by downloading the new loading screen in high resolution. <a href="https://t.co/Njv873jbJy">https://t.co/Njv873jbJy</a> <a href="https://t.co/ovreNIyqZf">pic.twitter.com/ovreNIyqZf</a></p>&mdash; Pokémon GO (@PokemonGoApp) <a href="https://twitter.com/PokemonGoApp/status/956345524009013251?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>              
+            </div>
+            <!-- end of ROW5 Col1of3: Twitter Feed -->
+
+
+            <!-- Hyperlink to link navigation to PokeMonCenterMap -->
+            <a name="PokeMonCenterMap"></a>
+
+            <!-- ROW5 Col2: Map -->
+            <div class="col-xs-12
+                            col-sm-4
+                            col-md-4
+                            col-lg-4 show">
+                <!-- Embed Google Map for Pokemon Center -->
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103644.64360208368!2d139.64920865820312!3d35.728798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f044d6725%3A0x5c5c669ed9f5c455!2sPokemon+Center+Mega+Tokyo!5e0!3m2!1sen!2ssg!4v1516860839027" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div><br>
+            </div>
+            <!-- end of ROW5 Col2: Map -->
+
+            <!-- Hyperlink to link navigation to PokeMonGoServerStatus -->
+            <a name="PokeMonGoServerStatus"></a>
+
+            <!-- ROW5 Col3: iFRAME -->
+            <div class="col-xs-12
+                            col-sm-4
+                            col-md-4
+                            col-lg-4 show">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="http://www.mmoserverstatus.com/pokemon_go">
+                            <p>Your browser does not support iframes.</p>
+                        </iframe>
+                    </div>
+            </div>
+            <!-- end of ROW5 Col3: iFRAME -->
+        </div><hr>
+        <!-- end of ROW5: Details -->
+
+        <!-- Hyperlink to link navigation to SocialMediaHandles -->
+        <a name="SocialMediaHandles"></a>
+
+        <!-- ROW6: Footer -->
+        <div class="row">
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/PokemonGO/">
+                            <i class="fa fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/pokemongoapp?lang=en">
+                            <i class="fa fa-twitter-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGKm2-1RQ8zCAAAAWEdVO8ooqDqhPsalFHQZXiASZU0IxP06F3ojOQAy_-8E0Tge3IvuR1cuFzgyrcQLHRrGFaA3s0urR-tm3eCVUjY8093yrvTmvw-6mGgpson2WIeURBRefo=&originalReferer=https://www.google.com.sg/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fniantic">
+                            <i class="fa fa-linkedin-square fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of ROW6: Footer -->
+
+    </div>
+    <!-- end of CONTAINER - code entire page contents within this div class="container"-->
+
+    <!-- JavaScript - jQuery first, follows by tether.js, Popper.js, then Bootstrap JS in sequence -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/tether/1.4.0/tether.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    
+
+    <!-- Customise JavaScript -->
+    <script src="javascript/javascript.js"></script>
+
+    <!-- This portion is for the footer TOP button -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow84.js"></script>
+    <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+    <!-- End of TOP button -->
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="javascript/jquery.smartmenus.js"></script>
+
+    <!-- SmartMenus jQuery init -->
+    <script type="text/javascript">
+        $(function() {
+            $('#main-menu').smartmenus({
+                mainMenuSubOffsetX: -1,
+                mainMenuSubOffsetY: 4,
+                subMenusSubOffsetX: 6,
+                subMenusSubOffsetY: -6
+            });
+        });
+    </script>
+
+</body>
+
+</html>
